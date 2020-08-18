@@ -29,11 +29,13 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>publish\PowerSyntax\</PublishUrl>
     <InstallUrl />
     <TargetCulture>ja</TargetCulture>
-    <ApplicationVersion>1.0.0.3</ApplicationVersion>
+    <ApplicationVersion>1.0.0.4</ApplicationVersion>
     <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -123,20 +125,23 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="AngleSharp, Version=0.12.1.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
-      <HintPath>packages\AngleSharp.0.12.1\lib\net46\AngleSharp.dll</HintPath>
+    <Reference Include="AngleSharp, Version=0.14.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>packages\AngleSharp.0.14.0\lib\net472\AngleSharp.dll</HintPath>
     </Reference>
-    <Reference Include="AngleSharp.Css, Version=0.12.1.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
-      <HintPath>packages\AngleSharp.Css.0.12.1\lib\net46\AngleSharp.Css.dll</HintPath>
+    <Reference Include="AngleSharp.Css, Version=0.14.2.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>packages\AngleSharp.Css.0.14.2\lib\net472\AngleSharp.Css.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearScript, Version=6.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ClearScript.6.0.2\lib\net45\ClearScript.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Encoding.CodePages.4.5.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.4.7.1\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -194,6 +199,194 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\1c.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\abnf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\accesslog.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\actionscript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ada.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\angelscript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\apache.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\applescript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\arcade.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\arduino.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\armasm.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\asciidoc.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\aspectj.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\autohotkey.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\autoit.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\avrasm.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\awk.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\axapta.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\bash.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\basic.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\bnf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\brainfuck.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\c-like.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\c.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cal.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\capnproto.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ceylon.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\clean.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\clojure-repl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\clojure.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cmake.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\coffeescript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\coq.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cos.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cpp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\crmsh.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\crystal.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\csharp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\csp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\css.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\d.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dart.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\delphi.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\diff.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\django.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dns.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dockerfile.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dos.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dsconfig.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dts.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dust.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ebnf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\elixir.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\elm.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\erb.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\erlang-repl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\erlang.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\excel.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\fix.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\flix.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\fortran.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\fsharp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gams.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gauss.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gcode.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gherkin.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\glsl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\go.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\golo.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gradle.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\groovy.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\haml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\handlebars.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\haskell.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\haxe.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\hsp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\htmlbars.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\http.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\hy.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\inform7.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ini.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\irpf90.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\isbl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\java.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\javascript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\jboss-cli.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\json.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\julia-repl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\julia.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\kotlin.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lasso.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\latex.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ldif.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\leaf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\less.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lisp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\livecodeserver.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\livescript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\llvm.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lsl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lua.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\makefile.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\markdown.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mathematica.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\matlab.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\maxima.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mel.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mercury.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mipsasm.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mizar.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mojolicious.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\monkey.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\moonscript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\n1ql.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nginx.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nim.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nix.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nsis.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\objectivec.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ocaml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\openscad.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\oxygene.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\parser3.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\perl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\pf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\pgsql.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\php-template.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\php.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\plaintext.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\pony.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\powershell.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\processing.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\profile.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\prolog.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\properties.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\protobuf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\puppet.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\purebasic.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\python.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\q.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\qml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\r.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\reasonml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\rib.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\roboconf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\routeros.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\rsl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ruby.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ruleslanguage.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\rust.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sas.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scala.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scheme.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scilab.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scss.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\shell.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\smali.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\smalltalk.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sqf.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sql.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\stan.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\stata.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\step21.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\stylus.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\subunit.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\swift.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\taggerscript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tap.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tcl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\thrift.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tp.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\twig.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\typescript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vala.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vbnet.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vbscript-html.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vbscript.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\verilog.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vhdl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vim.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\x86asm.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\xl.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\xml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\xquery.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\yaml.js" />
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\zephir.js" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -209,6 +402,8 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="PowerSyntax_1_TemporaryKey.pfx" />
+    <None Include="PowerSyntax_2_TemporaryKey.pfx" />
     <None Include="PowerSyntax_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -242,561 +437,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\highlight.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\1c.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\abnf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\accesslog.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\actionscript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ada.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\angelscript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\apache.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\applescript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\arcade.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\arduino.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\armasm.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\asciidoc.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\aspectj.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\autohotkey.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\autoit.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\avrasm.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\awk.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\axapta.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\bash.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\basic.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\bnf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\brainfuck.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cal.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\capnproto.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ceylon.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\clean.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\clojure.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\clojure-repl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cmake.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\coffeescript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\coq.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cos.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cpp.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\crmsh.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\crystal.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\cs.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\csp.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\css.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\d.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dart.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\delphi.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\diff.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\django.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dns.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dockerfile.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dos.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dsconfig.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dts.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\dust.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ebnf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\elixir.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\elm.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\erb.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\erlang.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\erlang-repl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\excel.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\fix.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\flix.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\fortran.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\fsharp.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gams.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gauss.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gcode.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gherkin.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\glsl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\go.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\golo.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\gradle.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\groovy.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\haml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\handlebars.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\haskell.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\haxe.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\hsp.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\htmlbars.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\http.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\hy.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\inform7.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ini.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\irpf90.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\isbl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\java.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\javascript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\jboss-cli.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\json.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\julia.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\julia-repl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\kotlin.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lasso.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ldif.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\leaf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\less.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lisp.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\livecodeserver.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\livescript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\llvm.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lsl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\lua.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\makefile.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\markdown.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mathematica.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\matlab.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\maxima.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mel.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mercury.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mipsasm.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mizar.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\mojolicious.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\monkey.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\moonscript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\n1ql.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nginx.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nimrod.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nix.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\nsis.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\objectivec.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ocaml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\openscad.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\oxygene.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\parser3.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\perl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\pf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\pgsql.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\php.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\plaintext.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\pony.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\powershell.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\processing.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\profile.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\prolog.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\properties.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\protobuf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\puppet.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\purebasic.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\python.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\q.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\qml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\r.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\reasonml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\rib.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\roboconf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\routeros.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\rsl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ruby.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\ruleslanguage.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\rust.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sas.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scala.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scheme.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scilab.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\scss.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\shell.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\smali.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\smalltalk.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sqf.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\sql.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\stan.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\stata.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\step21.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\stylus.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\subunit.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\swift.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\taggerscript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tap.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tcl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tex.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\thrift.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\tp.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\twig.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\typescript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vala.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vbnet.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vbscript.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vbscript-html.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\verilog.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vhdl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\vim.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\x86asm.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\xl.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\xml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\xquery.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\yaml.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\zephir.js" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="highlight\node_modules\highlight.js\styles\a11y-dark.css" />
@@ -905,9 +545,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="highlight\node_modules\highlight.js\styles\dark.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="highlight\node_modules\highlight.js\styles\darkula.css" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="highlight\node_modules\highlight.js\styles\default.css" />
@@ -1066,10 +703,36 @@
     <EmbeddedResource Include="highlight\node_modules\highlight.js\styles\zenburn.css" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="jsrt-dotnet\src\Microsoft.Scripting\Microsoft.Scripting.csproj">
-      <Project>{1bb54949-d911-4a97-9715-608ea27fdc93}</Project>
-      <Name>Microsoft.Scripting</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\core.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="highlight\node_modules\highlight.js\lib\languages\python-repl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClearScriptV8-32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClearScriptV8-64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-base-ia32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-base-x64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-ia32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-x64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-zlib-ia32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-zlib-x64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -1082,10 +745,10 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>PowerSyntax_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>PowerSyntax_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>9222BEEC0C498D2EBAC43067DFBCEAB1173D167A</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>5720A60E7C9D2D1CB4B9970D15667671BABB079F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -1102,4 +765,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>cd $(SolutionDir)highlight &amp;&amp; npm install</PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="packages\Microsoft.ClearScript.6.0.2\build\net45\Microsoft.ClearScript.targets" Condition="Exists('packages\Microsoft.ClearScript.6.0.2\build\net45\Microsoft.ClearScript.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.ClearScript.6.0.2\build\net45\Microsoft.ClearScript.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.ClearScript.6.0.2\build\net45\Microsoft.ClearScript.targets'))" />
+  </Target>
 </Project>
