@@ -10,22 +10,6 @@ namespace PowerSyntax
 {
     public class HighlightJS : IDisposable
     {
-        class Importer
-        {
-            public Importer(HighlightJS hljs)
-            {
-                this.hljs = hljs;
-            }
-
-            public object EvaluateFile(string filename)
-            {
-                string code = hljs.resource.ReadAllText(Path.Combine($@"\lib\{filename.Substring(2)}.js"));
-                return hljs.engine.Evaluate(new DocumentInfo(filename), code);
-            }
-
-            private HighlightJS hljs;
-        };
-
         public HighlightJS(IResourceProvider resource)
         {
             this.resource = resource;
